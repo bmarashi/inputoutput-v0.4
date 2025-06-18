@@ -1,5 +1,5 @@
 [build]
-command = "pip install -r requirements.txt && python -c 'import app'"
+command = "echo 'Deploying static site...'
 base = ""
 publish = "templates"
 
