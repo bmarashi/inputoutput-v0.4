@@ -4,4 +4,4 @@ base = ""
 publish = "templates"
 
 [build.environment]
-PYTHON_VERSION = "3.9.18"
+PYTHON_VERSION = "3.9.13"
