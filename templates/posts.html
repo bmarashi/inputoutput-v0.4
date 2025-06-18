@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputoutput.xyz - @{{ username }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="site-title">inputoutput.xyz</h1>
+            <p class="user-handle">@{{ username }}</p>
+        </div>
+        
+        <div class="input-section">
+            <input type="text" id="titleInput" class="title-input" placeholder="Title">
+            <textarea id="postInput" class="post-input" placeholder="Write your post here"></textarea>
+            <div class="button-container">
+                <button id="postButton" class="post-button">Post</button>
+                <a href="{{ url_for('logout') }}" class="logout-link">Logout</a>
+            </div>
+        </div>
+        
+        <div id="postsSection" class="posts-section">
+            <!-- Posts will be added here dynamically -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
