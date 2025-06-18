@@ -1,4 +1,7 @@
 [build]
-command = "pip install -r requirements.txt && python app.py"
+command = "python3.9 -m pip install -r requirements.txt && python3.9 app.py"
 base = ""
 publish = "templates"
+
+[build.environment]
+PYTHON_VERSION = "3.9.18"
